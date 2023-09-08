@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Failed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .message-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff0000;
+        }
+        .message {
+            margin: 20px 0;
+            color: #333;
+        }
+        .link {
+            display: inline-block;
+            margin: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1>Login Failed</h1>
+        <p class="message">The username or password you entered is incorrect.</p>
+        <a class="link" href="{% url 'loginform' %}">Return to Login</a>
+        <a class="link" href="{% url 'signupform' %}">Sign Up</a>
+    </div>
+</body>
+</html>

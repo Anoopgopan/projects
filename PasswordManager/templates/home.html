@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<head>
+{ % extends 'base.html' % }
+</head>
+{% block content %}
+
+<h1>{{name}} manager is running V.1.0.0</h1>
+<form action = "login", method = 'post'>
+    {% csrf_token %} 
+    Username : <input type = "text", name = "username"><br>
+    Password: <input type = "password" , name = "password"><br>
+    <input type = "submit">
+</form>
+
+{% endblock %}
